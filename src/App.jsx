@@ -5,6 +5,10 @@ import loclog from './image/loclog.png'
 import perlog from './image/perlog.png'
 import cartlog2 from './image/cartlog2.png'
 import cartlog from './image/cartlog.png'
+import w11 from './image/Windows-11.png'
+import pcg from './image/PCGamePass_2.png'
+import w11p from './image/Windows-11-Pro_1.png'
+import vero from './image/vero-family.png'
 import serlog from './image/serlog.png'
 import droplog from './image/droplog.png'
 import acerlogo from './image/acerlogo.svg'
@@ -202,8 +206,44 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
 
 
 </section>
+<section className='w-full h-[100px] flex justify-center items-center mb-[20px]'>
+  <h1 className='font-bold text-3xl text-gray-950'>Discover More with Acer</h1>
+</section>
 
 
+
+<section className='w-full h-[420px] grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 gap-7 '>
+<div className='flex flex-col '>
+  <img src={w11} alt=""  />
+<h1 className='font-medium text-3xl mt-3'>Windows 11</h1>
+<h2 className='font-medium text-2xl mt-3'>Introducing Windows 11</h2>
+<p className='text-xl text-green-500 mt-7'>Learn More</p>
+</div>
+<div className='flex flex-col '>
+  <img src={pcg} alt=""  />
+<h1 className='font-medium text-3xl mt-3'>PC GAME PASS</h1>
+<h2 className='font-medium text-2xl mt-3'>Three-month trial included with your new Acer laptop.</h2>
+<p className='text-xl text-green-500 mt-7'>Learn More</p>
+</div>
+<div className='flex flex-col '>
+  <img src={vero} alt=""  />
+<h1 className='font-medium text-3xl mt-3'>Acer Vero</h1>
+<h2 className='font-medium text-2xl mt-3'>Green PC Products</h2>
+<p className='text-xl text-green-500 mt-7'>Learn More</p>
+</div>
+<div className='flex flex-col '>
+  <img src={w11p} alt=""  />
+<h1 className='font-medium text-3xl mt-3'>Windows 11 Pro</h1>
+<h2 className='font-medium text-2xl mt-3'>Windows 11 Pro for Acer business laptops
+
+</h2>
+<p className='text-xl text-green-500 mt-7'>Learn More</p>
+</div>
+</section>
+
+<section>
+  
+</section>
     
     </>
   )
