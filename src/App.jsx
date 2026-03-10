@@ -12,6 +12,10 @@ import vero from './image/vero-family.png'
 import serlog from './image/serlog.png'
 import droplog from './image/droplog.png'
 import acerlogo from './image/acerlogo.svg'
+import fb from './image/fb.png'
+import it from './image/it.png'
+import x from './image/x.png'
+import yt from './image/yt.png'
 import slide1 from './image/slide1.avif'
 import slide2 from './image/slide2.avif'
 import slide3 from './image/slide3.mp4'
@@ -212,7 +216,10 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
 
 
 
-<section className='w-full h-[420px] grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 gap-7 '>
+
+
+<section className='w-full h-[420px] grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 gap-7 pl-5 pr-5  '>
+
 <div className='flex flex-col '>
   <img src={w11} alt=""  />
 <h1 className='font-medium text-3xl mt-3'>Windows 11</h1>
@@ -244,7 +251,86 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
 <section>
   
 </section>
-    
+
+
+  <section className='w-full h-[54px]  mt-5 flex justify-center items-center bg-gray-50'>
+    <h1 className='font-semibold text-center w-full'>Back To Top</h1>
+  </section>
+  
+  <section className='w-full h-[550px] bg-gray-100 grid grid-cols-4 text-xl'>
+    <div className='pl-5 mt-5'>
+      <ul className=' xl:flex flex-col list-none gap-2.5 hidden '>
+        <li className='font-medium'>Products</li>
+        <li >Laptops</li>
+        <li>Acer Chromebooks</li>
+        <li>Tablet and Phones</li>
+        <li>Monitors</li>
+        <li>Projectors</li>
+        <li>Digital Signage</li>
+        <li>Electronics & Accessories</li>
+        <li>Networking</li>
+        <li>eMobility</li>
+        <li>Handheld Gaming</li>
+        <li>Appliances</li>
+        <li>Sustainable Products</li>
+        <li></li>
+
+      </ul>
+    </div>
+    <div className='mt-5'>
+      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
+        <li className='font-medium'>Support</li>
+        <li>Acer ID</li>
+        <li>Register a Product</li>
+        <li>Acer Community</li>
+        <li>Drivers and Manuals</li>
+        <li>Acer Answers</li>
+        <li>Contact Support</li>
+
+      </ul>
+    </div>
+    <div className='mt-5'>
+      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
+        <li className='font-medium'>Resources</li>
+        <li>Acer Corner</li>
+        <li>Acer Global Account Portal</li>
+        <li>Find a Store</li>
+        <li>Acer Technologies</li>
+        <li>McAfee</li>
+
+      </ul>
+    </div>
+    <div className='mt-5'>
+      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
+        <li className='font-medium'>About Acer</li>
+        <li>Contact Us</li>
+        <li>Investor Relations</li>
+        <li>Press</li>
+        <li>Awards</li>
+        <li>Events</li>
+        <li className='font-medium mt-7'>Sustainability</li>
+        <li>Corporate Social Responsibility</li>
+        <li>Product Carbon Footprint</li>
+        <li>Project Humanity</li>
+        <li>Earthion</li>
+
+
+      </ul>
+    </div>
+
+  </section>
+  <div className="w-[90%] h-[3px] bg-gray-400 mx-auto"></div>
+  <section className=' w-full h-[150px] bg-gray-100'>
+<div className='flex justify-center w-full h-[100px] bg-gray-100'>
+  <img src={fb} alt="" className='m-19 h-13 mr-4 mt-5'/>
+  <img src={it} alt="" className='m-19 h-13 mr-4 mt-5' />
+  <img src={x} alt="" className='m-19 h-13 mr-4 mt-5' />
+  <img src={yt} alt="" className='m-19 h-13 mr-4 mt-5' />
+</div>
+<div className='w-full h-[50px] bg-gray-100'></div>
+  </section>
+  <footer className='w-full bg-gray-100 '>
+</footer>
     </>
   )
 }
