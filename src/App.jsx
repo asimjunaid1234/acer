@@ -66,23 +66,25 @@ const prevSlide = () => {
 
   return (
     <>
-       <header className='w-full h-[108px] flex flex-col'>
-      <div className='w-full h-[42px] flex bg-[#303030]'>
-        <div>
+       <header className='w-full h-auto flex flex-col'>
+      <div className='w-full h-auto flex bg-[#303030] py-1'>
+        <div className='hidden xl:flex flex-1 '>
           <img src={acerbrands} alt="" className='hidden xl:block' />
         </div>
-        <div className='flex justify-center items-center lg:ml-75 sm:ml-40 md:ml-50 text-white'>
+        <div className='flex justify-center items-center flex-1  text-white '>
           Discover the Best Deals at Acer Store – Shop Now!
         </div>
-        <img src={loclog} alt="" className='hidden xl:block ml-90' />
+        <div className=' hidden xl:flex flex-1 justify-end'>
+        <img src={loclog} alt="" className='hidden xl:block ' />
         <img src={perlog} alt="" className='hidden xl:block' />
         <img src={cartlog} alt="" className='hidden xl:block' />
+        </div>
       </div>
-      <div className='w-full h-[66px] flex justify-centers'>
+      <div className='w-full h-auto flex-1 flex justify-centers py-3'>
 
         <img src={droplog} alt="" className='xl:hidden w-15 h-15' />
         <img src={acerlogo} alt="" className='w-20 ml-5' />
-        <div className=' pl-60  justify-center items-center hidden xl:flex ' >
+        <div className=' flex-1 justify-center items-center hidden xl:flex ' >
           <ul className='flex list-none gap-10 items-center justify-center font-medium text-xl'>
             <li>Store</li>
             <li>AI</li>
@@ -182,7 +184,7 @@ index === currentSlide ? "bg-green-500" : "bg-gray-400"
 Browse Popular Categories
 </h2>
 
-<div className="w-full overflow-x-auto lg:overflow-visible">
+<div className="w-full overflow-x-auto ">
 <div className="flex flex-nowrap lg:justify-center gap-10 px-6">
 
 {categories.map((item, i) => (
@@ -210,7 +212,7 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
 
 
 </section>
-<section className='w-full h-[100px] flex justify-center items-center mb-[20px]'>
+<section className='w-full h-auto flex justify-center items-center py-6'>
   <h1 className='font-bold text-3xl text-gray-950'>Discover More with Acer</h1>
 </section>
 
@@ -218,7 +220,7 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
 
 
 
-<section className='w-full h-[420px] grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 gap-7 pl-5 pr-5  '>
+<section className='w-full h-auto grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 gap-7 px-5 py-5 '>
 
 <div className='flex flex-col '>
   <img src={w11} alt=""  />
@@ -252,84 +254,168 @@ className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 object-cont
   
 </section>
 
-
-  <section className='w-full h-[54px]  mt-5 flex justify-center items-center bg-gray-50'>
+<footer className='w-full bg-gray-100 '>
+  <section className='w-full h-auto  py-5 flex justify-center items-center bg-gray-50'>
     <h1 className='font-semibold text-center w-full'>Back To Top</h1>
   </section>
   
-  <section className='w-full h-[550px] bg-gray-100 grid grid-cols-4 text-xl'>
+  <section className='w-full h-auto bg-gray-100 grid grid-cols-1 xl:grid-cols-4 text-xl'>
     <div className='pl-5 mt-5'>
-      <ul className=' xl:flex flex-col list-none gap-2.5 hidden '>
-        <li className='font-medium'>Products</li>
-        <li >Laptops</li>
-        <li>Acer Chromebooks</li>
-        <li>Tablet and Phones</li>
-        <li>Monitors</li>
-        <li>Projectors</li>
-        <li>Digital Signage</li>
-        <li>Electronics & Accessories</li>
-        <li>Networking</li>
-        <li>eMobility</li>
-        <li>Handheld Gaming</li>
-        <li>Appliances</li>
-        <li>Sustainable Products</li>
+      <ul className=' flex flex-col list-none xl:gap-2.5  '>
+        <li className='font-medium flex items-center'> <span> Products</span> <svg xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2"
+  stroke="currentColor"
+  className="w-5 h-5 ml-auto xl:hidden">
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7" />
+</svg></li>
+        <li className='hidden xl:block' >Laptops</li>
+        <li className='hidden xl:block'>Acer Chromebooks</li>
+        <li className='hidden xl:block'>Tablet and Phones</li>
+        <li className='hidden xl:block'>Monitors</li>
+        <li className='hidden xl:block'>Projectors</li>
+        <li className='hidden xl:block'>Digital Signage</li>
+        <li className='hidden xl:block'>Electronics & Accessories</li>
+        <li className='hidden xl:block'>Networking</li>
+        <li className='hidden xl:block'>eMobility</li>
+        <li className='hidden xl:block'>Handheld Gaming</li>
+        <li className='hidden xl:block'>Appliances</li>
+        <li className='hidden xl:block'>Sustainable Products</li>
         <li></li>
 
       </ul>
     </div>
-    <div className='mt-5'>
-      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
-        <li className='font-medium'>Support</li>
-        <li>Acer ID</li>
-        <li>Register a Product</li>
-        <li>Acer Community</li>
-        <li>Drivers and Manuals</li>
-        <li>Acer Answers</li>
-        <li>Contact Support</li>
+    <div className='mt-5 pl-5'>
+      <ul className='flex flex-col list-none gap-2.5 '>
+        <li className='font-medium flex items-center'><span>Support</span> <svg xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2"
+  stroke="currentColor"
+  className="w-5 h-5 ml-auto xl:hidden">
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7" />
+</svg>
+        </li>
+        <li className='hidden xl:block'>Acer ID</li>
+        <li className='hidden xl:block'>Register a Product</li>
+        <li className='hidden xl:block'>Acer Community</li>
+        <li className='hidden xl:block'>Drivers and Manuals</li>
+        <li className='hidden xl:block'>Acer Answers</li>
+        <li className='hidden xl:block'>Contact Support</li>
 
       </ul>
     </div>
-    <div className='mt-5'>
-      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
-        <li className='font-medium'>Resources</li>
-        <li>Acer Corner</li>
-        <li>Acer Global Account Portal</li>
-        <li>Find a Store</li>
-        <li>Acer Technologies</li>
-        <li>McAfee</li>
+    <div className='mt-5 pl-5'>
+      <ul className=' flex flex-col list-none gap-2.5 '>
+        <li className='font-medium flex items-center'><span>Resources </span><svg xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2"
+  stroke="currentColor"
+  className="w-5 h-5 ml-auto xl:hidden">
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7" />
+</svg>
+        </li>
+        <li className='hidden xl:block'>Acer Corner</li>
+        <li className='hidden xl:block'>Acer Global Account Portal</li>
+        <li className='hidden xl:block'>Find a Store</li>
+        <li className='hidden xl:block'>Acer Technologies</li>
+        <li className='hidden xl:block'>McAfee</li>
 
       </ul>
     </div>
-    <div className='mt-5'>
-      <ul className=' xl:flex flex-col list-none gap-2.5 hidden'>
-        <li className='font-medium'>About Acer</li>
-        <li>Contact Us</li>
-        <li>Investor Relations</li>
-        <li>Press</li>
-        <li>Awards</li>
-        <li>Events</li>
-        <li className='font-medium mt-7'>Sustainability</li>
-        <li>Corporate Social Responsibility</li>
-        <li>Product Carbon Footprint</li>
-        <li>Project Humanity</li>
-        <li>Earthion</li>
+    <div className='mt-5 pl-5'>
+      <ul className=' flex flex-col list-none gap-2.5 '>
+        <li className='font-medium flex items-center'><span>About Acer</span> <svg xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2"
+  stroke="currentColor"
+  className="w-5 h-5 ml-auto xl:hidden">
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7" />
+</svg>
+        </li>
+        <li className='hidden xl:block'>Contact Us</li>
+        <li className='hidden xl:block'>Investor Relations</li>
+        <li className='hidden xl:block'>Press</li>
+        <li className='hidden xl:block'>Awards</li>
+        <li className='hidden xl:block'>Events</li>
+        <li className='font-medium xl:mt-7 mt-4 flex items-center '><span>Sustainability </span> <svg xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="2"
+  stroke="currentColor"
+  className="w-5 h-5 ml-auto xl:hidden">
+  <path stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19 9l-7 7-7-7" />
+</svg></li>
+        <li className='hidden xl:block'>Corporate Social Responsibility</li>
+        <li className='hidden xl:block'>Product Carbon Footprint</li>
+        <li className='hidden xl:block'>Project Humanity</li>
+        <li className='hidden xl:block'>Earthion</li>
 
 
       </ul>
     </div>
 
   </section>
-  <div className="w-[90%] h-[3px] bg-gray-400 mx-auto"></div>
-  <section className=' w-full h-[150px] bg-gray-100'>
-<div className='flex justify-center w-full h-[100px] bg-gray-100'>
-  <img src={fb} alt="" className='m-19 h-13 mr-4 mt-5'/>
-  <img src={it} alt="" className='m-19 h-13 mr-4 mt-5' />
-  <img src={x} alt="" className='m-19 h-13 mr-4 mt-5' />
-  <img src={yt} alt="" className='m-19 h-13 mr-4 mt-5' />
+  <div className="w-[90%] h-[3px] mt-5 bg-gray-400 mx-auto "></div>
+  <section className=' w-full h-auto bg-gray-100'>
+<div className='flex justify-center w-full h-auto] bg-gray-100'>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-10 h-9 mx-4">
+  <path d="M22 12a10 10 0 1 0-11.56 9.88v-7h-2.7v-2.88h2.7V9.8c0-2.67 1.59-4.15 4.02-4.15 1.16 0 2.37.2 2.37.2v2.6h-1.33c-1.31 0-1.72.81-1.72 1.64v1.97h2.93l-.47 2.88h-2.46v7A10 10 0 0 0 22 12z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" class="m-10 h-9 mx-4">
+  <rect x="3" y="3" width="18" height="18" rx="5"/>
+  <circle cx="12" cy="12" r="4"/>
+  <circle cx="17.5" cy="6.5" r="1"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-10 h-9 mx-4">
+  <path d="M18.244 2H21l-6.52 7.45L22 22h-6.828l-5.35-6.995L3.5 22H1l7.01-8.01L2 2h6.828l4.84 6.338L18.244 2zm-2.39 18h1.89L8.29 4H6.3l9.553 16z"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="m-10 h-9 mx-4">
+  <path d="M23 12s0-3.5-.44-5.05a2.9 2.9 0 0 0-2.05-2.05C18.95 4.5 12 4.5 12 4.5s-6.95 0-8.51.4A2.9 2.9 0 0 0 1.44 6.95C1 8.5 1 12 1 12s0 3.5.44 5.05a2.9 2.9 0 0 0 2.05 2.05c1.56.4 8.51.4 8.51.4s6.95 0 8.51-.4a2.9 2.9 0 0 0 2.05-2.05C23 15.5 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+</svg>
 </div>
-<div className='w-full h-[50px] bg-gray-100'></div>
+<div className='w-full h-auto bg-gray-100'></div>
   </section>
-  <footer className='w-full bg-gray-100 '>
+  <section>
+    <ul className='flex flex-wrap justify-center items-center py-4'>
+      <li className='px-4 border-r border-gray-400'>Privacy Policy</li>
+      <li className='px-4 border-r border-gray-400'>Cookie Policy</li>
+      <li className='px-4 border-r border-gray-400'>Legal Notice</li>
+      <li className='px-4 border-r border-gray-400'>Additional Legal Information</li>
+      <li className='px-4 border-r border-gray-400'>Accessibility Policy</li>
+      <li className='px-4 border-r border-gray-400'>Cookies Settings</li>
+    </ul>
+  </section>
+  <section className='w-full flex justify-center items-center '>
+    <svg xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  className="w-5 h-5 ">
+  <circle cx="12" cy="12" r="10"/>
+  <path d="M2 12h20"/>
+  <path d="M12 2a15 15 0 0 1 0 20"/>
+  <path d="M12 2a15 15 0 0 0 0 20"/>
+</svg><span className='flex pl-2'>India - English</span>
+  </section>
+  <section className='flex justify-center items-center py-5'>
+    © 2026 Acer Inc.
+  </section>
+  
 </footer>
     </>
   )
